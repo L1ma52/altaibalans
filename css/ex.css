@@ -1397,3 +1397,75 @@ img {
         font-size: 1rem;
     }
 }
+/* меню скрыто по умолчанию */
+.menu-wrap{
+    display: none;
+}
+
+/* при открытии */
+.header.expand .menu-wrap{
+    display: block;
+}
+
+/* блокировка скролла */
+body.lock{
+    overflow: hidden;
+}
+
+/* ===== FIX HERO (чтобы не ломалось на 960px) ===== */
+
+/* убираем жесткую высоту */
+.section.utp,
+.section.lidgen{
+    min-height: 100vh;
+    height: auto;
+}
+
+/* на планшетах убираем абсолютное позиционирование */
+@media (max-width: 991.98px){
+    .ct{
+        position: relative !important;
+    }
+
+    .utp .bg{
+        width: 100%;
+        height: 100%;
+        clip-path: none;
+    }
+}
+
+/* промежуточная адаптация (главный фикс 960px) */
+@media (min-width: 961px) and (max-width: 1199.98px){
+
+    .utp h1,
+    .utp h1 span{
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    .utp h2{
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .btn.action{
+        font-size: 1.2rem;
+    }
+
+    p, span, li, .price, .alert{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* чтобы кнопки не вылазили */
+.btn{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* картинки не ломают верстку */
+img{
+    max-width: 100%;
+    height: auto;
+}
