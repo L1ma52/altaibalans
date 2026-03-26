@@ -1469,3 +1469,10 @@ img{
     max-width: 100%;
     height: auto;
 }
+.header .menu-wrap{
+    display: none;
+}
+
+.header.expand .menu-wrap{
+    display: block;
+}
