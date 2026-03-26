@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="ru"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="css/app.css" rel="stylesheet">
+        <link href="css/ex.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/fa.min.css">
+        <title>Галерея | АлтайБаланс</title>
+        <meta name="description" content="Галерея работ АлтайБаланс: диагностика, ремонт карданных валов, балансировка коленчатых валов, роторов и выездная балансировка.">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/tag.js" async></script>
+</head>
+<body>
+<div class="header align-items-center shadow-box px-2">
+    <div class="row w-100 m-0">
+        <div class="col col-lg-auto d-flex justify-content-center align-items-center">
+            <a href="index.html">
+    <img src="images/logo.png" alt="Логотип">
+</a>
+        </div>
+        <div class="col-8 col-lg d-flex justify-content-center align-items-center">
+            <a class="btn phone text-light me-lg-5 py-1 px-3 radius shadow-box bg-dark action-tel" href="tel:+7 (963) 577-95-10">
+                <i class="fas fa-mobile-alt pr-2 text-kardan-yell"></i> +7 (963) 577-95-10
+            </a>
+        </div>
+        <div class="col-auto d-flex justify-content-center align-items-center">
+            <i class="fas fa-bars burger text-kardan-yell"></i>
+        </div>
+    </div>
+    <div class="menu-wrap mt-5 w-100">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-light text-center">Меню</h3>
+                <ul class="menu text-center">
+                    <li><a class="text-kardan-yell text-decoration-none" href="index.html">Главная</a></li>
+                    <li><a class="text-kardan-yell text-decoration-none" href="gallery.html">Галерея</a></li>
+                    <li><a class="text-kardan-yell text-decoration-none" href="price.html">Прайс</a></li>
+                    <li><a class="text-kardan-yell text-decoration-none" href="company.html">
+                            О компании
+                        </a></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-secondary text-center position-absolute bottom-0 py-3">© 2026 АлтайБаланс</div>
+</div>
+
+<section class="gallery-section pt-5 mt-5">
+    <div class="container">
+        <h2 class="text-center mb-4 text-dark fw-bold">Фото работ</h2>
+
+        <div class="gallery-grid gallery-grid-clean">
+            <div class="gallery-item">
+                <img src="images/rab1.jpg" alt="Фото работы 1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/rab2.jpg" alt="Фото работы 2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/rab3.jpg" alt="Фото работы 3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/rab4.jpg" alt="Фото работы 4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/rab5.jpg" alt="Фото работы 5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/rab6.jpg" alt="Фото работы 6">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="video-section py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-4">Видео работ</h2>
+
+        <div class="video-grid">
+
+            <div class="video-item">
+                <iframe 
+                    src="https://vk.ru/clip_ext.php?oid=-100557381&id=456239043&autoplay=1"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-item">
+                <iframe 
+                    src="https://vk.ru/clip_ext.php?oid=-100557381&id=456239044&autoplay=1"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!--footer-->
+<div id="anchor-5" class="pb-5 mb-3"></div>
+<h2 class="text-center mb-4">Контакты</h2> 
+<div class="section position-relative overflow-hidden mb-5 contact px-lg-5">
+    <div class="container-fluid">
+
+        <h5 class="pb-0 pt-1 my-0">Телефон:</h5>
+        <span>
+            <a class="link-primary action-tel" href="tel:+7 (963) 577-95-10">
+                +7 (963) 577-95-10 
+            </a> 
+        </span>
+        <h5 class="pb-0 pt-1 my-0">Электронная почта:</h5>
+        <span>
+          <a class="link-primary" href="mailto:altaibalans@yandex.ru" id="copyEmail">
+    altaibalans@yandex.ru
+</a>
+
+<!-- уведомление -->
+<div id="copyToast" class="copy-toast">Почта скопирована</div>        </span>        
+        <h5 class="pb-0 pt-1 my-0">Время работы сервиса:</h5>
+        <span>
+            Пн-Пт с 9:00 до 18:00
+
+        </span>
+        <h5 class="pb-0 pt-1 my-0">Адрес сервиса:</h5>
+        <span>
+            656063, Барнаул, Проспект Космонавтов, 14м/3
+        </span>
+        <a class="d-block btn action action-track text-dark mt-3 py-1 px-3 radius shadow-box bg-kardan-yell" 
+   target="_blank" 
+   href="https://yandex.ru/maps/?text=Барнаул%20проспект%20Космонавтов%2014м/3">
+    <i class="fas fa-map-marker-alt"></i> Построить маршрут
+</a>
+
+<div class="w-100 mt-3">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A063e9cbbf3808be3e8390c6a8b28734cae847f34f7aa90589ccaeafe4b82ff4d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+</div>
+</div>
+<div class="footer fixed-bottom shadow-box">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100 gap-4">
+
+        <a class="social link-dark" href="https://t.me/altaibalans" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+
+        <a class="social link-dark" href="https://vk.ru/altaibalans" target="_blank">
+            <i class="fab fa-vk"></i>
+        </a>
+
+        <a class="social link-dark" href="#anchor-5">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+
+    </div>
+</div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="js/ex.js"></script>
+<script src="js/cookies.js"></script>
+</body></html>
