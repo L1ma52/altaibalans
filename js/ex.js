@@ -5,12 +5,20 @@ $(function () {
     }
 
     $('body').on('click', '.burger', function () {
-        $(this).closest('.header').toggleClass('expand');
-    });
+    const header = $(this).closest('.header');
+    header.toggleClass('expand');
 
-    $('body').on('click', '.menu a', function () {
-        $(this).closest('.header').removeClass('expand');
-    });
+    if (header.hasClass('expand')) {
+        $('body').addClass('lock');
+    } else {
+        $('body').removeClass('lock');
+    }
+});
+
+$('body').on('click', '.menu a', function () {
+    $('.header').removeClass('expand');
+    $('body').removeClass('lock');
+});
 
     $('body').on('click', '.partners a', function (e) {
         e.preventDefault();
